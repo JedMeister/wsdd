@@ -1,3 +1,9 @@
+wsdd (0.6.4-1) stable; urgency=low
+
+  * Rebase on latest upstream version.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Sat, 27 Mar 2021 16:39:53 +1100
+
 wsdd (0.6.2-1) stable; urgency=low
 
   * Rebase to latest upstream version.
