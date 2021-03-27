@@ -1,1 +1,2 @@
 src/wsdd.py usr/sbin/
+man/wsdd.1 /usr/share/man/man1/
