@@ -2,12 +2,19 @@ Source: wsdd
 Section: net
 Priority: optional
 Maintainer: Volker Theile <volker.theile@openmediavault.org>
-Build-Depends: debhelper (>= 12)
+Homepage: https://github.com/christgau/wsdd
+Build-Depends:
+ debhelper (>= 12),
+ python3-all (>= 3.6~),
+ dh-exec,
 Standards-Version: 4.5.0
 
 Package: wsdd
 Architecture: all
-Depends: ${misc:Depends}, samba-common-bin
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ samba-common-bin
 Description: Web Services on Devices (WSD) daemon
  Web Services on Devices (WSD) is a Microsoft API to simplify programming
  connections to web service enabled devices, such as Printers, Scanners
