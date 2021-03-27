@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -z "$2" ]; then
+    # looks like a first time installation
+    systemctl enable wsdd
+    echo "INFO: please configure wsdd in /etc/wsdd.conf before starting"
+else
+    # looks like a reconfiguraton or upgrade
+    systemctl --quiet is-active wsdd.service
+    if [[ $? -eq 0 ]]; then
+        systemctl daemon-reload
+        systemctl restart wsdd.service
+    fi
+fi
+
+exit 0

@@ -1,0 +1,14 @@
+[Unit]
+Description=Web Services Dynamic Discovery host daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/wsdd.conf
+ExecStart=/usr/bin/wsdd $WSDD_PARAMS
+User=daemon
+Group=daemon
+
+[Install]
+WantedBy=multi-user.target

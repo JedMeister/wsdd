@@ -1,0 +1,4 @@
+d4144a6d1121ceeb15f3a85e7aed5c93  lib/systemd/system/wsdd.service
+fcd1777a8c1ca1ac0bee663fe6da4ab6  usr/sbin/wsdd.py
+54d0271377935235f767790af63af984  usr/share/doc/wsdd/changelog.Debian.gz
+0b4588d2b9ff27404e2512700bacd98b  usr/share/doc/wsdd/copyright

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl --now disable wsdd
+exit 0

@@ -1,0 +1,11 @@
+Package: wsdd
+Architecture: all
+Section: net
+Priority: optional
+Maintainer: Felix Brack <fb@ltec.ch>
+Homepage: https://github.com/christgau/wsdd
+Depends: python3
+Version: 0.6.4
+Description: wsdd implements a Web Service Discovery host daemon.
+ This enables (Samba) hosts, like your local NAS device, to be
+ found by Web Service Discovery Clients like Windows.

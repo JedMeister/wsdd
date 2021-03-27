@@ -1,0 +1,18 @@
+[Unit]
+Description=Web Services Dynamic Discovery host daemon
+; Start after the network has been configured.
+After=network-online.target
+Wants=network-online.target
+; If the unit bound to is stopped, this unit will be stopped too.
+BindsTo=smbd.service
+
+[Service]
+EnvironmentFile=-/etc/default/wsdd
+ExecStart=/usr/sbin/wsdd.py $WSDD_OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
